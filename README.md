@@ -1,6 +1,6 @@
 # wknn_emotion_detection
 Paper <b>"Nearest neighbour approaches for Emotion Detection in Tweets"</b> by O. Kaminska, Ch. Cornelis and V. Hoste.  
-Presented at <b>AECL 2021 during WASSA workshop</b> as a poster.
+Presented at <b>EACL 2021 during WASSA workshop</b> as a poster.
 
 <b>ACL Anthology</b> link: https://www.aclweb.org/anthology/2021.wassa-1.22/  
 <b>WASSA 2021</b> homepage: https://wt-public.emm4u.eu/wassa2021/ 
