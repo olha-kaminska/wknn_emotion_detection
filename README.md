@@ -3,6 +3,7 @@ Paper <b>"Nearest neighbour approaches for Emotion Detection in Tweets"</b> by O
 Presented at <b>EACL 2021 during WASSA workshop</b> as a poster.
 
 <b>ACL Anthology</b> link: https://www.aclweb.org/anthology/2021.wassa-1.22/  
+<b>Arxiv</b> link: https://arxiv.org/abs/2107.05394 
 <b>WASSA 2021</b> homepage: https://wt-public.emm4u.eu/wassa2021/ 
 
 <b>BibTeX citation:</b> 
