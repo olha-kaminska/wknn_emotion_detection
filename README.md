@@ -4,7 +4,16 @@ Code for the paper written by [Olha Kaminska](https://scholar.google.com/citatio
 This paper uses data from <a href="https://competitions.codalab.org/competitions/17751">SemEval-2018 Task 1: Affect in Tweets</a> competition, where we participated in Task 2a "EI-oc" (emotion intensity ordered classification) for English tweets. 
 
 ### Repository Overview ###
-TBA
+- The **code** directory contains .py files with different functions:
+  - *preprocessing.py* - functions for data uploading and preperation;
+  - *embeddings_and_lexicons.py* - functions for tweets embeddings with different methods and lexicons;
+  - *wknn_eval.py* - functions for wkNN approach and cross-validation evaluation.
+- The **data** directory contains *README_data_download.md* file with instruction on uploading necessary dataset files that should be saved in the *data* folder.
+- The **lexica** directory contains *README_lexicons_download.md* file with instruction on uploading necessary lexicons files that should be saved in the *lexica* folder.
+- The **model** directory contains *README_model_download.md* file with instruction on uploading necessary models that should be saved in the *model* folder.
+- The file **Example.ipynb** provides an overview of all function and their usage on the example of Anger dataset. It is built as a pipeline described in the paper with corresponded results. 
+- The file *requirements.txt* contains the list of all necessary packages and versions used with the Python 3.7.4 environment.
+- The file *WASSA2021_poster_Olha_Kaminska.pdf* contains a poster that was presented for this paper at WASSA 2021.
 
 ### ACL link ###
 https://www.aclweb.org/anthology/2021.wassa-1.22/  
