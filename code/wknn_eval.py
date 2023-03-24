@@ -249,6 +249,18 @@ def evaluate_embedding_with_lexicon(train, test, words, class_col, vector, lexic
             return "Enter valid wkNN_method: labels or conf_scores!"
         results.append(round(res[0], 4), round(res[1], 4), round(res[2], 4))
     return results    
+  
+def cosine_relation(tweet1, tweet2):
+    '''
+    This function calculates cosine similarity between two vectors.
+    
+    It uses "numpy" package as "np".
+    
+    Input: tweet1, tweet2 - array, the target vectors
+    Output: float, cosine similarity
+    
+    '''
+    return 0.5 * (1 + np.dot(tweet1, tweet2)/(np.linalg.norm(tweet1)*np.linalg.norm(tweet2)))
     
 def get_neigbours(test_vector, df_train_vectors, feature, k, text_column, class_column): 
     '''

@@ -161,6 +161,23 @@ def get_lexicon_scores(word, lexicon, lexicon_words, size):
     else:
         return np.ones(size)
         
+def normalize(vector, minimum, maximum):
+'''
+    This function normalize elemnets 
+    
+    It uses "numpy" library as "np".
+    
+    Input: - vector: array, the target vector
+           - minimum: float, minimum value for normalization
+           - maximum: float, maximum value for normalization
+    Output: normalized vector
+'''
+    new_vector = []
+    for v in vector:
+        new_vector.append((v-minimum)/(maximum-minimum))
+    return np.array(new_vector)
+ 
+ 
 def append_lexicon_scores(sent, vec, lexicon_data): 
     '''
     This function appends one lexicon scores to the embedding vector.

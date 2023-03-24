@@ -75,8 +75,8 @@ def transform_data(file_name, columns, sep):
     data['Cleaned_tweet_wt_stopwords'] = data['Cleaned_tweet'].apply(lambda x: delete_stopwords(x))
     # in case class columns contains not only class number - filter it 
     # it was added for emotion datsets that have class column in a format as '1: low amount of anger can be inferred'
-    if ' ' in str(data[columns[2]][0]):
-        data["Class"] = data[columns[2]].apply(lambda x: int(x.split(':')[0]))
+    if ' ' in columns[-1]:
+        data["Class"] = data[columns[-1]].apply(lambda x: int(x.split(':')[0]))
     return data    
     
 def upload_datasets(file_train, file_dev, file_test, columns, sep):
@@ -87,7 +87,8 @@ def upload_datasets(file_train, file_dev, file_test, columns, sep):
     It uses "pandas" library to combine datasets.
     
     Input: two (train and test) or three (if there are development) strings with pathes to datasets;
-           columns - the list of columns of dataframes that corresponds to their id, text, and class columns;
+           columns - the list of columns of dataframes that corresponds to their id, text, etc. Class column should be the 
+                       last in this list, and text in the second place;
            sep - string that identifies separator in the saved file, for example: ','.
     Output: for two inputs: two DataFrames - for train and test datasets; 
             for four inputs: four DataFrames - for train, development, train concatenated with development, and test datasets.
